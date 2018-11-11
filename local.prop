@@ -1,0 +1,101 @@
+ro.config.hw_cota=true
+#AR000AA5QU iwx484722 20180224 begin
+ro.config.hw_rcs_product=true
+#AR000AA5QU iwx484722 20180224 end
+#AR000AA5P4 d00437968 20180226 begin
+ro.hwpp.region_info=CH_EU
+persist.vendor.radio.custom_ecc=0
+ro.config.cbs.all_bc_msg=gsm
+ro.hwpp.sw_mbn_modem_restart=1
+ro.config.nostore_nw_sel_mode=false
+ro.config.force_auto_plmn=20815
+ro.config.hw_disp_conparty_num=false
+persist.vendor.radio.process_sups_ind=1
+ro.config.hw_volte_dyn=true
+#AR000AA5P4 d00437968 20180226 end
+#AR000AA5VT Added VoLTE/Vowifi flags pwx527129 20180226 begin
+persist.radio.sw_mbn_volte=1
+persist.radio.sw_mbn_openmkt=1
+persist.radio.sw_mbn_update=1
+ro.config.hw_ims_pkg=org.codeaurora.ims
+ro.product.enhanced_4g_lte=false
+ro.config.hw_volte_on=true
+ro.config.hw_volte_show_switch=true
+ro.config.hw_ims_as_normal=false
+ro.config.check_qcom_volte_call=true
+ro.config.hw_volte_icon_rule=0
+ro.config.hw_vtlte_on=false
+ro.config.hw_vowifi=true
+persist.data.iwlan.enable=true
+#DTS2018032715794 swx364964 20180328 begin
+ro.config.subcard_show_network=false
+#DTS2018032715794 swx364964 20180328 end
+#AR000AA5PU j00377589 20180307 begin
+ro.config.hw_fast_dormancy=true
+ro.config.hw_fdtimer_screenOff=3000
+ro.config.hw_fdtimer_screenOn=7000
+#AR000AA5PU j00377589 20180307 end
+ro.config.vowifi_pref_wifi_cell=""
+#AR000AA5VT Added VoLTE/Vowifi flags pwx527129 20180226 end
+#DTS2017042511491 to display CUSTC and CUSTD r84086610 20180227 begin
+ro.config.hw_custverdisplay=true
+#DTS2017042511491 to display CUSTC and CUSTD r84086610 20180227 end
+#AR00097G7U r84086610 20180227 begin
+ro.booking.channel.path=/version/special_cust/LDN-L21B/hw/eu/xml/.booking.data.aid
+#AR00097G7U r84086610 20180227 end
+#AR000AA5RJ swx558296 20180406 begin
+ro.config.hw_use_browser_ua=http://wap1.huawei.com/uaprof/HUAWEI_LDN-L21_UAProfile.xml
+#AR000AA5RJ swx558296 20180406 end
+#DTS2018021304097 mwx351136 20180309 begin
+ro.config.skip_using_cep_list=true
+#DTS2018021304097 mwx351136 20180309 end
+#AR0009H7FT r84086610 20180227 begin
+ro.com.google.rlzbrandcode=HWDA
+ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7
+ro.facebook.partnerid=huawei:3ed03d0-8ce2-42fa-a449-b9443817d7b4
+#AR0009H7FT r84086610 20180227 end
+#Adding product name r84086610 20180227 begin
+ro.product.name=LDN-L21B
+#Adding product name r84086610 20180227 end
+#DTS2018030808049 Hide pop-up for supplementary service menu k00377512 20180314 begin
+ro.config.hide_data_dialog=true
+#DTS2018030808049 Hide pop-up for supplementary service menu k00377512 20180314 end
+#DTS2018012305564 swx558296 20180406 begin
+ro.config.support_internetCall=false
+#DTS2018012305564 swx558296 20180406 end
+#Synced from Normal
+ro.product.first_api_level=26
+#AR000AIUUL dwx513026 20180626 begin
+persist.radio.modem.cap=78442
+#AR000AIUUL dwx513026 20180626 end
+#DTS2018030810969 swx531934 08022018 begin
+persist.radio.volte_dtmf_enable=true
+#DTS2018030810969 swx531934 08022018 end
+# AR000AS4KH Client id update rwx558295 2018/06/27 begin 
+ro.com.google.clientidbase.ms=android-huawei-rev1
+# AR000AS4KH Client id update rwx558295 2018/06/27 end
+ro.comp.version_version=Version-LDN-L21B-000000 8.0.0.1(00J7)
+
+ro.build.user=test
+
+ro.build.tags=release-keys
+
+ro.build.display.id=LDN-L21 8.0.0.134(C432)
+
+ro.build.version.incremental=134(C432)
+
+ro.build.description=LDN-L21-user 8.0.0 HUAWEILDN-L21 134(C432) release-keys
+
+ro.build.fingerprint=HUAWEI/LDN-L21B/HWLDN-Q:8.0.0/HUAWEILDN-L21/134(C432):user/release-keys
+
+ro.vendor.build.fingerprint=HUAWEI/LDN-L21B/HWLDN-Q:8.0.0/HUAWEILDN-L21/134(C432):user/release-keys
+
+ro.product.CustDVersion=D1
+
+ro.product.imeisv=04
+
+ro.build.product.real.id=LDN-L21 8.0.0.134(C432CUSTC432D1)
+
+sys.hisi.pmom.service.enable=false
+
+ro.config.beta_sec_ctrl=false
