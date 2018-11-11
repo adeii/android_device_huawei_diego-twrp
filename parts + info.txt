@@ -1,0 +1,116 @@
+fastboot getvar rescue_version
+-> rescue_version: rescue0.6
+
+fastboot getvar rescue_phoneinfo / oem get-build-number
+-> phoneinfo: LDN-L21 8.0.0.134(C432)
+
+fastboot getvar vendorcountry
+-> vendorcountry: hw/eu
+
+fastboot getvar rescue_ugs_port
+-> ugs_port: UGSB
+
+fastboot getvar rescue_enter_recovery
+-> getvar:rescue_enter_recovery FAILED (remote: FAIL)
+
+fastboot getvar max-download-size
+-> max-download-size:   0x1ff00000 (535822336 bytes ~ 512 MB)
+
+fastboot oem emmc_diag / get_key_version / check-rootinfo / check-image / backdoor info / backdoor get
+-> not allowed
+
+fastboot oem battery_present_check
+-> (bootloader) 3954mv
+
+fastboot oem get_hwnff_ver
+-> (bootloader) ver2.3
+
+fastboot oem get-psid
+-> (bootloader) SN:***
+-> (bootloader) IMEI:***
+
+fastboot oem get-bootinfo
+(bootloader) *******************************************
+(bootloader)  Image is origin
+(bootloader)  Verify mode is enforcing
+(bootloader)  Check root info is safe
+(bootloader)  Lock state is unlock
+(bootloader)  Root State: ROOT
+(bootloader) *******************************************
+
+fastboot oem check-rootinfo
+(bootloader) INFOstatus        : RISK
+(bootloader) INFOversion       : v1.1
+(bootloader) INFOcurrent status: SAFE
+(bootloader) INFOold status    : SAFE
+(bootloader) INFOchange_time   : 0
+(bootloader) INFOitem: root-prop, status: SAFE, credible: Y
+(bootloader) INFOitem: setids, status: SAFE, credible: Y
+(bootloader) INFOitem: verifyboot, status: SAFE, credible: N
+(bootloader) INFOitem: verity-enable, status: SAFE, credible: Y
+(bootloader) INFOitem: fblock, status: locked, credible: Y
+(bootloader) INFOitem: userlock, status: unlocked, credible: Y
+
+
+
+
+---------------------
+hmmm... riskyyy
+fastboot oem disable_dm_verity
+fastboot oem enable_dm_verity
+-----
+DDR
+aboot
+apdp
+bootfail_info
+cache
+cmnlib
+cmnlib64
+cust
+devcfg
+devinfo
+dip
+dpo
+dsp
+erecovery_kernel
+erecovery_ramdisk
+erecovery_vendor
+frp
+fsc
+fsg
+kernel
+keymaster
+keystore
+limits
+lksecapp
+log
+mcfg
+misc
+modem
+modemst1
+modemst2
+mota
+msadp
+nff
+odm
+oeminfo
+pad0
+pad1
+pad2
+patch
+persist
+product
+ramdisk
+recovery_ramdisk
+recovery_vendor
+rpm
+rrecord
+sbl1
+sec
+ssd
+syscfg
+system
+tz
+userdata
+vendor
+version
