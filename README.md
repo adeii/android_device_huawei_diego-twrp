@@ -18,6 +18,7 @@ How to build TWRP (minimal, experimental)
     git clone https://github.com/adeii/twrp_device_huawei_london.git -b oreo london
     
     <patching is needed***>
+    <stock kernel, if needed, need to be unpacked from 7z archive>
     
     . build/envsetup.sh
     lunch omni_london-eng
