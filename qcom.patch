@@ -1,0 +1,24 @@
+diff --git a/cryptfs_hw/cryptfs_hw.c b/cryptfs_hw/cryptfs_hw.c
+index 3067d9c..caaeea3 100755
+--- a/cryptfs_hw/cryptfs_hw.c
++++ b/cryptfs_hw/cryptfs_hw.c
+@@ -64,6 +64,8 @@ static unsigned int cpu_id[] = {
+ 	239, /* MSM8939 SOC ID */
+ };
+ 
++#define KEYMASTER_PARTITION_NAME "/dev/block/bootdevice/by-name/keymaster"
++
+ static int loaded_library = 0;
+ static int (*qseecom_create_key)(int, void*);
+ static int (*qseecom_update_key)(int, void*, void*);
+@@ -311,5 +313,10 @@ int should_use_keymaster()
+         return rc;
+     }
+ 
++    if (access(KEYMASTER_PARTITION_NAME, F_OK) == -1) {
++        SLOGI("Keymaster partition does not exists");
++        return rc;
++    }
++
+     return 1;
+ } 
